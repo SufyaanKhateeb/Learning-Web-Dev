@@ -15,7 +15,7 @@ body {
 .container {
     height: 100vh;
     min-height: 740px;
-    min-width: 740px;
+    min-width: 780px;
 }
 .page {
     height: 100%;
@@ -25,13 +25,12 @@ body {
 }
 fieldset {
     border: 2px solid white;
-    margin: 2%;
+    margin: 5% 5% 6% 5%;
     display: flex;
     align-items: center;
     max-width: 740px;
     height: 100%;
-    padding: 2%;
-    padding-top: 0;
+    padding: 0 2% 2% 2%;
 }
 
 legend {
