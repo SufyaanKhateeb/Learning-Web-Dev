@@ -16,12 +16,12 @@ body {
 
 .clock-outer {
     background-color: red;
-    width: 160px;
-    height: 160px;
+    width: 155px;
+    height: 155px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 80px;
+    border-radius: 50%;
     border: 1.5px solid rgb(199, 199, 199);
 }
 
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 1px solid white;
     box-shadow: inset 0 0 3px #272727;
 }
@@ -58,9 +58,9 @@ div.second {
     bottom: 3px;
     left: 28px;
     z-index: 1;
-    animation-name: second;
+    animation-name: animation;
     animation-duration: 60s;
-    animation-timing-function: linear;
+    animation-timing-function: steps(60,end);
     animation-iteration-count: infinite;
 }
 
@@ -72,7 +72,7 @@ div.minute {
     position: relative;
     left: 28px;
     z-index: 2;
-    animation-name: minute;
+    animation-name: animation;
     animation-duration: 3600s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -86,33 +86,16 @@ div.hour {
     top: 3px;
     left: 28px;
     z-index: 3;
-    animation-name: second;
+    animation-name: animation;
     animation-duration: 43200s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes second {
-    0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(90deg);}
-    50%  {transform: rotate(180deg);}
-    75%  {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
+@keyframes animation {
+    0%   {transform: rotate(-90deg);}
+    25%  {transform: rotate(0deg);}
+    50%  {transform: rotate(90deg);}
+    75%  {transform: rotate(180deg);}
+    100% {transform: rotate(270deg);}
 }
-
-@keyframes minute {
-    0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(90deg);}
-    50%  {transform: rotate(180deg);}
-    75%  {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
-}
-
-@keyframes hour {
-    0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(90deg);}
-    50%  {transform: rotate(180deg);}
-    75%  {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
-}
-
