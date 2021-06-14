@@ -1,30 +1,25 @@
-function add() {
-    x=document.getElementById('fnum').value;
-    y=document.getElementById('snum').value;
-    document.getElementById('ans').innerHTML= parseFloat(x) + parseFloat(y);
+var ans='';
+function dis(val)
+{
+    document.getElementById("input").value+=val;
+    if(val=='÷')
+        val='/';
+    if(val=='×')
+        val='*';
+    ans+=val;
 }
-function sub() {
-    x=document.getElementById('fnum').value;
-    y=document.getElementById('snum').value;
-    document.getElementById('ans').innerHTML= parseFloat(x) - parseFloat(y);
+  
+//function that evaluates the digit and return result
+function solve()
+{
+    let x = ans;
+    let y = eval(x);
+    document.getElementById("input").value = y;
 }
-function mul() {
-    x=document.getElementById('fnum').value;
-    y=document.getElementById('snum').value;
-    document.getElementById('ans').innerHTML= parseFloat(x) * parseFloat(y);
-}
-function div() {
-    x=document.getElementById('fnum').value;
-    y=document.getElementById('snum').value;
-    document.getElementById('ans').innerHTML= parseFloat(x) / parseFloat(y);
-}
-function mod() {
-    x=document.getElementById('fnum').value;
-    y=document.getElementById('snum').value;
-    document.getElementById('ans').innerHTML= parseFloat(x) % parseFloat(y);
-}
-function res() {
-    document.getElementById('fnum').value=null;
-    document.getElementById('snum').value=null;
-    document.getElementById('ans').innerHTML="NULL";
+  
+//function that clear the display
+function clr()
+{
+    document.getElementById("input").value = "";
+    ans='';
 }

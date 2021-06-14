@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 body {
@@ -19,22 +20,40 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border:1px solid red;
 }
 
 #calc {
-    border:1px solid red;
     display: grid;
-    grid-template-columns: 3rem 3rem 3rem 3rem;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
     grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
+    grid-gap: 0.2rem;
 }
 
 #clear {
-    grid-area: 1/1/1/ span 3;
+    grid-column: span 3;
 }
 
-#fnum {
-    border: 1px solid red;
-    width: 12rem;
-    height: 3rem;
+#input {
+    width: 16.6rem;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.315);
+    text-align: right;
+    color: white;
+    padding: 0.8%;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: larger;
+    background-color: #ffffffbd;
+}
+
+button:hover {
+    font-size: large;
+    background-color: #dbdbdbbd;
+}
+
+#add,#sub,#mul,#div,#equal,#dec,#mod,#clear {
+    font-size: 1.5rem;
 }
