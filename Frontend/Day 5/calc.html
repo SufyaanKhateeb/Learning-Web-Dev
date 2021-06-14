@@ -9,22 +9,30 @@
     <title>calculator</title>
 </head>
 <body>
-    <div id="page">
+    <div class="container">
         <header><b>Calculator</b></header>
-        <label for="fnum">first number</label>
-        <input type="number" id="fnum">
-        <br>
-        <label for="snum">second number</label>
-        <input type="number" id="snum">
-        <br>
-        <button id="add" value="+" onclick="add()">+</button>
-        <button id="add" value="-" onclick="sub()">-</button>
-        <button id="add" value="*" onclick="mul()">*</button>
-        <button id="add" value="/" onclick="div()">/</button>
-        <button id="add" value="%" onclick="mod()">%</button>
-        <br>
-        <span>Answer: <span id="ans">NULL</span></span>
-        <button value="reset" onclick="res()">Reset</button>
+        <input type="text" id="fnum">
+        <div id="calc">    
+            <!-- <label for="fnum">first number</label> -->
+            <button id="clear" value="C" onclick="clear()">C</button>
+            <button id="divi" value="÷" onclick="">÷</button>
+            <button id="num" value="1" onclick="">1</button>
+            <button id="num" value="2" onclick="">2</button>
+            <button id="num" value="3" onclick="">3</button>
+            <button id="mul" value="×" onclick="">×</button>
+            <button id="num" value="4" onclick="">4</button>
+            <button id="num" value="5" onclick="">5</button>
+            <button id="num" value="6" onclick="">6</button>
+            <button id="sub" value="-" onclick="">-</button>
+            <button id="num" value="7" onclick="">7</button>
+            <button id="num" value="8" onclick="">8</button>
+            <button id="num" value="9" onclick="">9</button>
+            <button id="add" value="+" onclick="">+</button>
+            <button id="dec" value="." onclick="">.</button>
+            <button id="num" value="0" onclick="">0</button>
+            <button id="mod" value="%" onclick="">%</button>
+            <button id="equal" value="=" onclick="">=</button>
+        </div>
     </div>
 </body>
 </html>
