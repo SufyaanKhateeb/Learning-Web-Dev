@@ -14,22 +14,19 @@ function dis(val)
             return;
     }
     document.getElementById("input").value+=val;
-    if(val=='÷')
-        val='/';
-    if(val=='×')
-        val='*';
-    eq+=val;
 }
   
 function del() {
     var del = document.getElementById("input").value;
     document.getElementById("input").value=del.substring(0,del.length - 1);
-    eq=eq.substring(0,eq.length - 1);
 }
 
 //function that evaluates the digit and return result
 function solve()
 {
+    eq=document.getElementById("input").value;
+    eq=eq.replace(/×/g,'*');
+    eq=eq.replace(/÷/g,'/');    
     let x = eq;
     let y = eval(x);
     document.getElementById("input").value = y;
