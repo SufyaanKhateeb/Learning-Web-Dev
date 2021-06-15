@@ -12,27 +12,29 @@
 <body>
     <div class="container">
         <header><b>Calculator</b></header>
-        <input type="text" id="input" disabled>
+        <input id="input" type="text" readonly>
         <div id="calc">    
-            <!-- <label for="fnum">first number</label> -->
-            <button id="clear" value="C" onclick="clr()">C</button>
-            <button id="div" value="/" onclick="dis('÷')">÷</button>
-            <button id="num" value="1" onclick="dis('1')">1</button>
-            <button id="num" value="2" onclick="dis('2')">2</button>
-            <button id="num" value="3" onclick="dis('3')">3</button>
+            <button id="clear" onclick="clr()">C</button>
+            <button id="backspace" onclick="del()">&#129104;</button>
+            <button id="bracO" onclick="dis('(')">(</button>
+            <button id="bracC" onclick="dis(')')">)</button>
             <button id="mul" value="×" onclick="dis('×')">×</button>
-            <button id="num" value="4" onclick="dis('4')">4</button>
-            <button id="num" value="5" onclick="dis('5')">5</button>
-            <button id="num" value="6" onclick="dis('6')">6</button>
-            <button id="sub" value="-" onclick="dis('-')">-</button>
+            <button id="div" value="/" onclick="dis('÷')">÷</button>
             <button id="num" value="7" onclick="dis('7')">7</button>
             <button id="num" value="8" onclick="dis('8')">8</button>
             <button id="num" value="9" onclick="dis('9')">9</button>
+            <button id="sub" value="-" onclick="dis('-')">-</button>
+            <button id="num" value="4" onclick="dis('4')">4</button>
+            <button id="num" value="5" onclick="dis('5')">5</button>
+            <button id="num" value="6" onclick="dis('6')">6</button>
             <button id="add" value="+" onclick="dis('+')">+</button>
+            <button id="num" value="1" onclick="dis('1')">1</button>
+            <button id="num" value="2" onclick="dis('2')">2</button>
+            <button id="num" value="3" onclick="dis('3')">3</button>
+            <button id="equal" value="=" onclick="solve()">=</button>
             <button id="dec" value="." onclick="dis('.')">.</button>
             <button id="num" value="0" onclick="dis('0')">0</button>
             <button id="mod" value="%" onclick="dis('%')">%</button>
-            <button id="equal" value="=" onclick="solve()">=</button>
         </div>
     </div>
 </body>

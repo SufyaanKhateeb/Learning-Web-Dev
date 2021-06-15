@@ -25,8 +25,8 @@ header {
 #calc {
     display: grid;
     grid-template-columns: 4rem 4rem 4rem 4rem;
-    grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
-    grid-gap: 0.2rem;
+    grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+    grid-gap: 5px;
 }
 
 #clear {
@@ -34,26 +34,61 @@ header {
 }
 
 #input {
-    width: 16.6rem;
+    max-width: 17rem;
     height: 4rem;
     background-color: rgba(0, 0, 0, 0.315);
-    text-align: right;
     color: white;
+    text-align: right;
     padding: 0.8%;
-    margin-bottom: 0.2rem;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    border: none;
     font-size: 1.5rem;
 }
 
 button {
+    color: white;
     font-size: larger;
-    background-color: #ffffffbd;
+    background-color: #292929;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.2);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+#input:focus {
+    outline: none;
 }
 
 button:hover {
     font-size: large;
-    background-color: #dbdbdbbd;
+    background-color: #484848;
 }
 
 #add,#sub,#mul,#div,#equal,#dec,#mod,#clear {
     font-size: 1.5rem;
+}
+
+#add,#sub,#mul,#div,#equal,#clear,#bracO,#bracC,#backspace {
+    background-color: #142E47;
+    color: #3E97E9;
+    
+}
+
+#add:hover,#sub:hover,#mul:hover,#div:hover,#clear:hover,#bracO:hover,#bracC:hover,#backspace:hover {
+    background-color: #1d4366;
+} 
+
+#equal {
+    grid-row: span 2;
+    background-color: #016CDE;
+    color: white;
+}
+
+#equal:hover {
+    background-color: #004a99;
 }
