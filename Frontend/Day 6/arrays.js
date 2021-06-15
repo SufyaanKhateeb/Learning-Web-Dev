@@ -1,3 +1,4 @@
+//1
 // function is_array (x) {
 //     return Array.isArray(x);
 // }
@@ -5,6 +6,7 @@
 // console.log(is_array('w3resource'));
 // console.log(is_array([1, 2, 4, 0]));
 
+//2
 // function array_Clone(x) {
 //     return x.slice(0);
 // }
@@ -12,6 +14,7 @@
 // console.log(array_Clone([1, 2, 4, 0]));
 // console.log(array_Clone([1, 2, [4, 0]]));
 
+//3
 // function first(arr,n=0) {
 //     if(n<0) {
 //         return arr.slice(0,0);
@@ -28,6 +31,7 @@
 // console.log(first([7, 9, 0, -2],6));
 // console.log(first([7, 9, 0, -2],-3));
 
+//4
 // function joinArray(arr) {
 //     console.log(arr.join(','));
 //     console.log(arr.join('+'));
@@ -36,6 +40,7 @@
 // myColor = ["Red", "Green", "White", "Black"];
 // joinArray(myColor);
 
+//5
 // function freq(arr){
 //     return arr.sort((a,b) =>
 //           arr.filter(v => v===a).length
