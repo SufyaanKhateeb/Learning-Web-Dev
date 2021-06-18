@@ -1,0 +1,33 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.gridbox {
+    margin: 100px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(20,1.5rem);
+    grid-template-rows: repeat(20,1.5rem);
+}
+
+.box {
+    background-color: #EC5142;
+    border: 0.1px solid #E24E3F;
+}
+
+.box:hover {
+    background-color: #dd655a;
+}
+
+.changecolor {
+    background-color: white;
+    border: none;
+}
