@@ -19,15 +19,18 @@
 }
 
 .box {
-    background-color: #EC5142;
+    background-color: #DE4738;
     border: 0.1px solid #E24E3F;
 }
 
 .box:hover {
-    background-color: #dd655a;
+    background-color: #EC5142;
 }
 
 .changecolor {
     background-color: white;
     border: none;
+}
+.changecolor:hover {
+    background-color: white;
 }
