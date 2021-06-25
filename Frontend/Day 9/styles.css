@@ -54,7 +54,7 @@ body {
     /* border: 5px solid #B3DEE2; */
     background-color: #B3DEE2;
     display: grid;
-    grid-template-columns: repeat(6,minmax(50px,1fr));
+    grid-template-columns: repeat(6,minmax(35px,1fr));
     grid-template-rows: repeat(10,80px);
     grid-gap: 8px;
 }
