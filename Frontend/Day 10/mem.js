@@ -1,4 +1,4 @@
-let image=["./angry 1.png", "./crying 1.png", "./exploding 1.png", "./hearts 1.png", "./horns 1.png", "./joy 1.png", "./party 1.png", "./poop 1.png"];
+let image=["./images/angry 1.png", "./images/crying 1.png", "./images/exploding 1.png", "./images/hearts 1.png", "./images/horns 1.png", "./images/joy 1.png", "./images/party 1.png", "./images/poop 1.png"];
 let backFace = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cross-mark_274c.png";
 image=[...image, ...image];
 
