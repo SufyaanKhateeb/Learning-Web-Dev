@@ -1,4 +1,4 @@
-let image=["https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/face-with-tears-of-joy_1f602.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/smiling-face-with-heart-eyes_1f60d.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/exploding-head_1f92f.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/partying-face_1f973.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/pouting-face_1f621.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/smiling-face-with-horns_1f608.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/loudly-crying-face_1f62d.png", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/285/pile-of-poo_1f4a9.png"];
+let image=["./angry 1.png", "./crying 1.png", "./exploding 1.png", "./hearts 1.png", "./horns 1.png", "./joy 1.png", "./party 1.png", "./poop 1.png"];
 let backFace = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cross-mark_274c.png";
 image=[...image, ...image];
 
@@ -24,13 +24,14 @@ let cardSelector=document.querySelectorAll('.card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let noOfMoves, bestMoves;
+let noOfMoves=0, bestMoves=0;
 
 function flipCard() {
     if(lockBoard) return;
     if(this==firstCard) return;
 
     this.classList.add("card-flip")
+
     
     if(hasFlippedCard==false) {
         hasFlippedCard=true;
@@ -40,6 +41,8 @@ function flipCard() {
 
     secondCard=this;
     lockBoard=true;
+    noOfMoves++;
+    document.getElementById("number").innerHTML=noOfMoves;
 
     matchingCards();
 }
