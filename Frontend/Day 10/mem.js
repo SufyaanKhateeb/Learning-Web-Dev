@@ -65,7 +65,7 @@ function unflipCards() {
         secondCard.classList.remove('card-flip');
   
         resetBoard();
-    }, 800);
+    }, 400);
 }
   
 function resetBoard() {
@@ -76,8 +76,23 @@ function resetBoard() {
 }
   
 
-cardSelector.forEach(card => {
-    let randomizer=Math.ceil(Math.random()*16);
-    card.style.order = randomizer;
-    card.addEventListener('click', flipCard);
-})
+function set() {
+    cardSelector.forEach(card => {
+        let randomizer=Math.ceil(Math.random()*16);
+        card.style.order = randomizer;
+        card.addEventListener('click', flipCard);
+    })
+}
+set();
+
+function reset() {
+    cardSelector.forEach(card => {
+        let randomizer=Math.ceil(Math.random()*16);
+        card.style.order = randomizer;
+        card.addEventListener('click', flipCard);
+        card.classList.remove("card-flip");
+        resetBoard();
+        noOfMoves=0;
+        document.getElementById("number").innerHTML=noOfMoves;
+    })
+}
