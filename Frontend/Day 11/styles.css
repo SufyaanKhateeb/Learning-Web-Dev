@@ -8,6 +8,11 @@
     font-family: 'Sanchez';
 }
 
+header {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
 h3 {
     text-align: left;
 }
@@ -16,14 +21,17 @@ h3 {
     /* border: 1px solid black; */
     height: 100vh;
     width: 100vw;
+    margin-top: 5px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     flex-direction: column;
 }
 
 .QnA {
-    /* border: 1px solid rgb(30, 255, 0); */
+    /* border: 3px solid rgb(0, 0, 0); */
+    padding: 5px;
+    border-radius: 8px;
     height: 60%;
     width: 60%;
     display: flex;
@@ -34,7 +42,6 @@ h3 {
 
 .options {
     /* border: 1px solid rgb(255, 0, 0); */
-    /* background-color: yellow; */
     width: 100%;
     height: 50%;
     display: grid;
@@ -49,12 +56,20 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .option p {
     /* border: 1px solid red; */
     display: block;
 }
 .question_no,.next,.back,.submit {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.next,.back,.submit {
+    margin: 3px;
+    padding: 2px;
 }
 
 .disabled {
@@ -78,6 +93,13 @@ h3 {
 
 .result_box {
     visibility: hidden;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tick,.cross {
@@ -96,4 +118,10 @@ h3 {
 .cross {
     border: 3px solid rgb(189, 24, 24);
     border-radius: 50%;
+}
+
+.restart {
+    margin: 8px;
+    padding: 2px;
+    font-weight: bold;
 }
