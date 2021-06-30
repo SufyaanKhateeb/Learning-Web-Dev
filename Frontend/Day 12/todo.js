@@ -10,6 +10,17 @@ inputBox.onkeyup = ()=>{
         addBtn.classList.remove("active");
     }
 }
+
+inputBox.addEventListener('keypress', function (e) {
+    if (e. key === 'Enter') {
+        let userEnteredValue = inputBox.value;
+        if(userEnteredValue.trim() != 0)
+            addBtn.onclick();
+        else
+            return;
+    }
+});
+
 showTasks();
 addBtn.onclick = ()=>{
     let userEnteredValue = inputBox.value; 
@@ -39,7 +50,6 @@ function showTasks(){
         li.innerHTML=element;
         let span = document.createElement('span');
         span.className='icon';
-        // span.onclick=deleteTask(index);
         span.setAttribute('onclick', 'deleteTask('+index+')');
         let i = document.createElement('i');
         i.className='fas fa-trash';
