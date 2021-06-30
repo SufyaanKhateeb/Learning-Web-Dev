@@ -1,11 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Sanchez);
+/* @import url(https://fonts.googleapis.com/css?family=Sanchez); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    font-family: 'Sanchez';
+    /* font-family: 'Sanchez'; */
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 header {
@@ -18,18 +20,15 @@ h3 {
 }
 
 .container {
-    /* border: 1px solid black; */
     height: 100vh;
     width: 100vw;
     margin-top: 5px;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     flex-direction: column;
 }
 
 .QnA {
-    /* border: 3px solid rgb(0, 0, 0); */
     padding: 5px;
     border-radius: 8px;
     height: 60%;
@@ -41,7 +40,6 @@ h3 {
 } 
 
 .options {
-    /* border: 1px solid rgb(255, 0, 0); */
     width: 100%;
     height: 50%;
     display: grid;
@@ -57,10 +55,10 @@ h3 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    cursor: pointer;
 }
-.option p {
-    /* border: 1px solid red; */
-    display: block;
+.option span {
+    cursor: pointer;
 }
 .question_no,.next,.back,.submit {
     font-size: medium;
@@ -102,12 +100,11 @@ h3 {
     transform: translate(-50%, -50%);
 }
 
-.tick,.cross {
+/* .tick,.cross {
     margin: 10px;
     padding: 5px;
     width: 35px;
     height: 35px;
-    /* word-wrap: normal; */
 }
 
 .tick {
@@ -118,7 +115,7 @@ h3 {
 .cross {
     border: 3px solid rgb(189, 24, 24);
     border-radius: 50%;
-}
+} */
 
 .restart {
     margin: 8px;
