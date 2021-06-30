@@ -64,7 +64,7 @@ body{
     height: 45px;
     color: #fff;
     margin-left: 5px;
-    font-size: 21px;
+    font-size: 20px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.18);
     background: #3A86FF;
@@ -102,7 +102,7 @@ body{
     word-wrap: break-word;
 }
 
-.todoList li .icon{
+.todoList li .del{
     position: absolute;
     right: 2px;
     top: 50%;
@@ -117,9 +117,29 @@ body{
     
 }
 
-.todoList li:hover .icon{
+.todoList li .tick{
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    background-color: #12dd34;
+    width: 41px;
+    height: 41px;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.todoList li:hover .del,.todoList li:hover .tick{
     transform: translateY(-50%) scale(1);
     transition: all .2s ease;
+}
+
+.checked {
+    text-decoration: line-through;
 }
 
 /* for scrollbar */

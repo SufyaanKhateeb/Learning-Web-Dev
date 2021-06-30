@@ -58,13 +58,10 @@ h3 {
     cursor: pointer;
 }
 
-.option:hover {
-    background-color: rgb(212, 212, 212);
-}
-
 .option span {
     cursor: pointer;
 }
+
 .question_no,.next,.back,.submit {
     font-size: medium;
     font-weight: bold;
