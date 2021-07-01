@@ -46,6 +46,8 @@ function showTasks(){
 
     todoList.innerHTML='';
     list.forEach((element, index) => {
+        if(element.value==undefined)
+            return;
         let li = document.createElement('li');
         li.innerHTML=element.value;
         let del = document.createElement('span');
@@ -92,7 +94,3 @@ function checkTask(index){
     localStorage.setItem("todolist", JSON.stringify(list));
     showTasks();
 }
-
-// va='shit';
-// lol = [{hello:va},{hello:true}];
-// console.log(lol[1].hello);
