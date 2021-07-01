@@ -3,6 +3,12 @@ let backFace = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumb
 image=[...image, ...image];
 
 let cardContainer=document.querySelector('.card-container');
+let end = document.querySelector('.end');
+let restartbtn = document.querySelector('.restart');
+
+restartbtn.onclick = ()=>{
+    window.location.reload();
+}
 
 for(i=0;i<16;i++) {
     let cardBox = document.querySelector(".card-container");
@@ -53,10 +59,22 @@ function matchingCards() {
 }
 
 function blockCards() {
+    let flag = 0;
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-  
+    firstCard.classList.add('blocked');
+    secondCard.classList.add('blocked');
     resetBoard();
+    cardSelector.forEach(card => {
+        if(!(card.classList.contains("blocked"))) {
+            flag = 1;
+            return;
+        }
+    });
+    setTimeout(() => {
+        if(flag==0)
+        end.style.transform='scale(1)';
+    }, 800);
 }
   
 function unflipCards() {

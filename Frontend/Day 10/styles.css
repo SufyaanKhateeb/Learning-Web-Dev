@@ -108,6 +108,48 @@ button:active {
     transform: rotateY(180deg);
 }
 
+.end {
+    z-index: 1;
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.score {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 400px;
+    width: 400px;
+    background: rgba(8, 8, 8, 0.856);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.score button {
+    margin: 20px;
+    /* background-color: rgba(8, 8, 8, 0.856); */
+    color: rgba(206, 198, 198, 0.87);
+}
+
 @media screen and (max-width: 500px) {
     .card-container {
         height: 400px;
