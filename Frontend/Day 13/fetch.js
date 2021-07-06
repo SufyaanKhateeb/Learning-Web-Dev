@@ -19,7 +19,7 @@ function getdata() {
     fetch('https://api.quotable.io/random')
     .then(res2 => res2.json())
     .then(data => {
-        quote.innerHTML="Random Quote: "+data.content;
+        quote.innerHTML='Random Quote: \"'+data.content+'\"';
     });
 }
 
