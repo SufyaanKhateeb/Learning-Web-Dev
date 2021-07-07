@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chesscard {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    border: 10px solid black;
+}
+
+.square:nth-child(odd), .squarerow:nth-child(even) {
+    background-color: black;
+}
+
+.square:nth-child(even), .squarerow:nth-child(odd) {
+    background-color: white;
+}
