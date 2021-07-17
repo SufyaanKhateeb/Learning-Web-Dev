@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #02cbe6;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.countercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
