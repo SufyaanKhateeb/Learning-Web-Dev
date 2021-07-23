@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+
+*:focus {
+  outline: none;
+}
+.container {
+  background-color: #ff6f59;
+  border: 2px solid #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 10px;
+}
+
+form {
+  margin: 10px auto;
+  width: 400px;
+}
+
+.upperPart {
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  align-items: center;
+}
+input {
+  height: 2.5rem;
+  background-color: #f7ece1;
+  border: 2px solid #43aa8b;
+}
+.upperPart input {
+  width: 100%;
+  border-radius: 5px;
+}
+.updateInputs {
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+.updateInputs > input {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+button {
+  height: 2rem;
+}
+.submitButton {
+  width: 100%;
+  background-color: #f7ece1;
+  border-radius: 5px;
+}
+
+.itemsContainer {
+  width: 400px;
+  height: 400px;
+  background-color: #254441;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+
+.items {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #43aa8b;
+  border-radius: 8px;
+}
+
+.editButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+}
+
+.del {
+  background-color: #af1b3f;
+  border-radius: 5px;
+}
+
+.edit {
+  background-color: #f7ece1;
+  border-radius: 5px;
+}
