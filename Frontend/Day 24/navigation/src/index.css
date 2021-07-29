@@ -6,11 +6,11 @@ body{
 }
 
 .navbar{
-  background-color:#9ac5e4;
+  background-color:#e98f45;
   display: flex;
   justify-content: space-around;
-  margin:5px;
-  padding: 5px;
+  /* margin:5px; */
+  padding: 10px;
 }
 
 .link{
