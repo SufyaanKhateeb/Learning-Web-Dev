@@ -1,14 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
-
-* {
-  margin: 0px;
-  padding: 0;
-  min-width: 200px;
-  box-sizing: border-box;
+body{
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
+.navbar{
+  background-color:#9ac5e4;
+  display: flex;
+  justify-content: space-around;
+  margin:5px;
+  padding: 5px;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+button{
   margin: 10px;
 }

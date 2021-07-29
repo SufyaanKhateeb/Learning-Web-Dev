@@ -1,14 +1,11 @@
-//showing use of useContext and making custom hooks
-import React from "react";
-import Context from "./components/context";
-import { ThemeProvider } from "./components/themecontext";
+import NavBar from './Navbar';
 
-export default function App() {
+function App() {
   return (
-    <>
-      <ThemeProvider>
-        <Context />
-      </ThemeProvider>
-    </>
+    <div className="App">
+      <NavBar/>
+    </div>
   );
 }
+
+export default App;
