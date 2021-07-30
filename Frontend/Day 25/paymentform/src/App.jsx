@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container">
       <h1 style={{ textAlign: "center" }}>Payment Form</h1>
-      <Accordion defaultActiveKey="0">
+      <Accordion >
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             <h4>Contact Infomation</h4>
@@ -95,7 +95,7 @@ function App() {
             </form>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        <Accordion.Item id="panelsStayOpen-collapseOne" eventKey="1">
           <Accordion.Header>
             <h4>Payment Information</h4>
           </Accordion.Header>
