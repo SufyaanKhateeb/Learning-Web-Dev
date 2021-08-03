@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  background-color: rgb(90, 168, 240);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 40%;
+  height: 2rem;
+  align-self: center;
+  margin: 8px;
+  border-radius: 5px;
+}
