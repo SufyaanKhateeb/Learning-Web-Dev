@@ -16,7 +16,7 @@ const ListTodo = () => {
           >
             {todo.title}
           </h4>
-          <button onClick={() => dispatch(checkItem(index))}>Done</button>
+          <button onClick={() => dispatch(checkItem(index))}>{todo.done?`Undo`:`Done`}</button>
           <button onClick={() => dispatch(removeItem(index))}>Delete</button>
         </div>
       ))}
