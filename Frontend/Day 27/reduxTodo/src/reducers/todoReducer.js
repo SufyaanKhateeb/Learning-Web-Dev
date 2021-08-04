@@ -8,7 +8,7 @@ const todoReducer = (state = [], action) => {
     state[action.payload].done = !state[action.payload].done;
     console.log(state);
 
-    return state;
+    return [...state];
   }
   return state;
 };
