@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addItem } from "../actions";
+import { addItem, loadTodos } from "../actions";
 
 const AddTodo = () => {
   const [item, setItem] = useState("");
@@ -26,6 +26,13 @@ const AddTodo = () => {
         }}
       >
         Add
+      </button>
+      <button
+        onClick={() => {
+          dispatch(loadTodos());
+        }}
+      >
+        Load Todos
       </button>
     </div>
   );
