@@ -8,6 +8,7 @@
 }
 .App {
   text-align: center;
+  height: 100vh;
 }
 .form {
   margin-top: 100px;
@@ -33,6 +34,7 @@
 
 .card img {
   width: 30%;
+  margin-top: 10px;
 }
 
 .card .place {
