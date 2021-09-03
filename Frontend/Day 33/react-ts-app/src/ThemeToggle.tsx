@@ -7,7 +7,7 @@ const ThemeToggle = () => {
     return (<button className={theme ? "theme-toggle dark" : "theme-toggle"} onClick={() => {
         setTheme(!theme);
     }}>
-        {theme ? "Dark" : "Light"}
+        {theme ? "Light" : "Dark"}
     </button>);
 }
 

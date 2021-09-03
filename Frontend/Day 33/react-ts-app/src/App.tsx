@@ -15,25 +15,41 @@ function App() {
   const [theme, setTheme] = useState<boolean>(false);
   const [todos, setTodos] = useState<Todo[]>([]);
   const [input, setInput] = useState<string>("");
+  const inputbox: HTMLInputElement = document.querySelector(
+    ".input"
+  ) as HTMLInputElement;
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className={theme ? "App dark" : "App"}>
-        <input
-          type="text"
-          onChange={(e) => {
-            setInput(e.target.value);
-          }}
-        />
-        <button
-          onClick={() => {
-            setTodos([...todos, { title: input, done: false }]);
-          }}
-        >
-          AddTodo
-        </button>
+        <div className="inputcontainer">
+          <input
+            className="input"
+            type="text"
+            onChange={(e) => {
+              setInput(e.target.value);
+            }}
+          />
+          <button
+            className="addbtn"
+            onClick={() => {
+              setTodos([...todos, { title: input, done: false }]);
+              inputbox.value = "";
+            }}
+          >
+            AddTodo
+          </button>
+        </div>
         <div className="todocontainer">
           {todos.map((todo, index) => {
-            return <TodoLIst title={todo.title} done={todo.done} />;
+            return (
+              <TodoLIst
+                title={todo.title}
+                done={todo.done}
+                setTodos={setTodos}
+                todos={todos}
+                index={index}
+              />
+            );
           })}
         </div>
 
