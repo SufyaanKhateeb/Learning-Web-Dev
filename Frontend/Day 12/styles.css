@@ -1,163 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    padding: 10px;
-    background: linear-gradient(140deg, #2E282A 0%, #17BEBB 100%);
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(140deg, #2e282a 0%, #17bebb 100%);
 }
 
-.wrapper{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    min-width: none;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 25px;
-    border-radius: 8px;
+.wrapper {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(36, 36, 36, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-width: none;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 8px;
 }
 
-.wrapper header{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
+.wrapper header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-.wrapper .inputField{
-    margin: 20px auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
+.wrapper .inputField {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
 }
 
-.inputField input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50px;
-    background-color: #CFDBD5;
-    border: none;
-    font-size: 17px;
-    padding-left: 15px;
-    transition: all 0.3s ease;
+.inputField input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50px;
+  background-color: #cfdbd5;
+  border: none;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
 }
 
-.inputField input:focus{
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+.inputField input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.inputField button{
-    width: 50px;
-    height: 45px;
-    color: #fff;
-    margin-left: 5px;
-    font-size: 20px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    background: #3A86FF;
-    cursor: pointer;
-    border-radius: 50%;
-    opacity: 0.6;
-    pointer-events: none;
-    transition: all 0.3s ease;
+.inputField button {
+  width: 50px;
+  height: 45px;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #3a86ff;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .inputField button:hover {
-    background: #296cd8;
+  background: #296cd8;
 }
 
-.inputField button.active{
-    opacity: 1;
-    pointer-events: auto;
+.inputField button.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.wrapper .todoList{
-    max-height: 250px;
-    overflow: auto;
+.wrapper .todoList {
+  max-height: 250px;
+  overflow: auto;
 }
 
-.todoList li{
-    position: relative;
-    list-style: none;
-    min-height: 45px;
-    line-height: 45px;
-    margin-bottom: 10px;
-    background: #CFDBD5;
-    border-radius: 50px;
-    padding: 0 15px;
-    cursor: default;
-    word-wrap: break-word;
+.todoList li {
+  position: relative;
+  list-style: none;
+  min-height: 45px;
+  line-height: 45px;
+  margin-bottom: 10px;
+  background: #cfdbd5;
+  border-radius: 50px;
+  padding: 0 15px;
+  cursor: default;
+  word-wrap: break-word;
 }
 
-.todoList li .del{
-    position: absolute;
-    right: 2px;
-    top: 50%;
-    transform: translateY(-50%) scale(0);
-    background: #f02711;
-    width: 41px;
-    height: 41px;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    
+.todoList li .del {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  background: #f02711;
+  width: 41px;
+  height: 41px;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 
-.todoList li .tick{
-    position: absolute;
-    right: 45px;
-    top: 50%;
-    transform: translateY(-50%) scale(0);
-    background-color: #12dd34;
-    width: 41px;
-    height: 41px;
-    font-size: 20px;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    
+.todoList li .tick {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  background-color: #12dd34;
+  width: 41px;
+  height: 41px;
+  font-size: 20px;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 
-.todoList li:hover .del,.todoList li:hover .tick{
-    transform: translateY(-50%) scale(1);
-    transition: all .2s ease;
+.todoList li:hover .del,
+.todoList li:hover .tick {
+  transform: translateY(-50%) scale(1);
+  transition: all 0.2s ease;
 }
 
 .checked {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 /* for scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    /* background-color: aqua; */
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+  /* background-color: aqua; */
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(107, 105, 105, 0.5); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(107, 105, 105, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
