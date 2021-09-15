@@ -29,4 +29,5 @@ Where clause: `select {column} from {tableName} where {conditons...};`<br><br>
 LIKE works with strings only. So we need to type cast data types accordingly.<br><br>
 For type casting, use `::`.<br><br>
 
-Rest can be better understood by watching and implementing simultaneously from the video at https://www.youtube.com/watch?v=7Hv8uhwK8qk&t=1889s
+Foreign key and Rest can be better understood by watching and implementing simultaneously from the video at https://www.youtube.com/watch?v=7Hv8uhwK8qk&t=1889s
+
